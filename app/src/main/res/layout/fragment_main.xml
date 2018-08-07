@@ -38,8 +38,14 @@
 
         <!--Register-->
         <TextView
+            android:id="@+id/txtRegister"
+            android:clickable="true"
             android:layout_gravity="center_horizontal"
             android:text="New Register"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
