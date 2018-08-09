@@ -33,8 +33,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_action_singout" />
-                                      <entry key="theme" value="HOLO_DARK" />
+                                      <entry key="outputName" value="ic_action_sing_out_black" />
                                       <entry key="themeColor" value="e52627" />
                                     </map>
                                   </option>
