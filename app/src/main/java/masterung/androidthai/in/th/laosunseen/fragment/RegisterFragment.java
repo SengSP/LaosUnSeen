@@ -159,6 +159,7 @@ public class RegisterFragment extends Fragment {
 
     }
 
+
     private void findPathUrlPhoto() {
         try {
 
