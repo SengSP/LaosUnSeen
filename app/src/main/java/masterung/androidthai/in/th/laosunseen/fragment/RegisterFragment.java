@@ -111,7 +111,7 @@ public class RegisterFragment extends Fragment {
         } else {
 //            No space
             createAuthentication();
-            uploadPhotoToFirebase();
+            //uploadPhotoToFirebase();
             //progressDialog.dismiss();
 
         }
@@ -128,6 +128,7 @@ public class RegisterFragment extends Fragment {
                 if (task.isSuccessful()) {
 
                     uidString = firebaseAuth.getCurrentUser().getUid();
+                    uploadPhotoToFirebase();
                     Log.d("8AugV1", "uidString ==>" + uidString);
 
                 } else {
@@ -153,7 +154,7 @@ public class RegisterFragment extends Fragment {
                 Toast.makeText(getActivity(), "Success Uploaded Photo", Toast.LENGTH_SHORT).show();
                 findPathUrlPhoto();
                 createPost();
-                createDatabase();
+                //createDatabase();
                 progressDialog.dismiss();
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -208,6 +209,7 @@ public class RegisterFragment extends Fragment {
                 public void onSuccess(Uri uri) {
                     urlStrings[0] = uri.toString();
                     pathURLString = urlStrings[0];
+                    createDatabase();
                     Log.d("9AugV1", "pathURL ==> " + pathURLString);
                 }
             });
